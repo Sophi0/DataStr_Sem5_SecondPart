@@ -38,5 +38,20 @@ public class City {
 		this.howManyTrafficLights = howManyTrafficLights;
 	}
 	
+	public City(String title, String country, int population, float squareKM, int howManyTrafficLights) {
+		super();
+		this.title = title;
+		this.country = country;
+		this.population = population;
+		this.squareKM = squareKM;
+		this.howManyTrafficLights = howManyTrafficLights;
+	}
+	
+	@Override
+	public String toString() {
+		return " City -> [title = " + title + ", country = " + country + ", population = " + population + ", squareKM = " + squareKM
+				+ ", howManyTrafficLights = " + howManyTrafficLights + "]";
+	}
+	
 	
 }
